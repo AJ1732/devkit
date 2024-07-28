@@ -2,6 +2,11 @@ import figma from "../assets/images/figma.png";
 import framer from "../assets/images/framer.png";
 import webflow from "../assets/logos/webflow.svg";
 
+import template from "../assets/images/templates.png"
+import assets from "../assets/images/assests.png"
+import components from "../assets/images/components.png"
+import wireframes from "../assets/images/wireframes.png"
+
 export const interests = [
   "headers",
   "wireframes",
@@ -38,5 +43,33 @@ export const alias: Alias[] = [
   {
     icon: framer,
     text: "framer",
+  },
+];
+
+interface CardProps {
+  src: string;
+  title: string;
+  caption: string;
+}
+export const cards: CardProps[] = [
+  {
+    src: template,
+    title: "templates",
+    caption: "Explore 2300+ beautiful templates",
+  },
+  {
+    src: assets,
+    title: "assets",
+    caption: "Great assets for all your design needs",
+  },
+  {
+    src: components,
+    title: "components",
+    caption: "Discover 2300+ utilities & components",
+  },
+  {
+    src: wireframes,
+    title: "wireframes",
+    caption: "Carefully crafted wireframes and layouts",
   },
 ];

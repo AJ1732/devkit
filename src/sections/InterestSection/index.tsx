@@ -2,14 +2,14 @@ import { alias, interests } from "../../data/db";
 
 const InterestSection = () => {
   return (
-    <section className="py-10">
+    <section className="pb-12 pt-10">
       <div className="flex flex-col items-center justify-center gap-10">
         {/* ALIAS DIVS */}
         <div className="flex items-center justify-center gap-4">
           {alias.map(({ icon, text }) => (
             <div
               key={text}
-              className="itce flex items-center justify-center gap-2 rounded-full bg-primary-500 px-4 py-2 text-[#FEFEFE]"
+              className="flex items-center justify-center gap-2 rounded-full bg-primary-500 px-4 py-2 text-[#FEFEFE]"
             >
               <img src={icon} alt="logo" className="size-5" />
               <span className="font-semibold first-letter:capitalize">

@@ -16,7 +16,7 @@
 
 .content-grid {
   --padding-inline: 1.5rem;
-  --content-max-width: 1220px;
+  --content-max-width: 80rem;
   --layout-max-width: 1440px;
 
   display: grid;

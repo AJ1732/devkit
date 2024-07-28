@@ -1,5 +1,9 @@
 import { Navbar } from "./components";
-import { HeadlineSection, InterestSection } from "./sections";
+import {
+  CardSection,
+  HeadlineSection,
+  InterestSection,
+} from "./sections";
 
 function App() {
   return (
@@ -7,6 +11,7 @@ function App() {
       <Navbar />
       <HeadlineSection />
       <InterestSection />
+      <CardSection />
     </div>
   );
 }
