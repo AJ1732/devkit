@@ -5,7 +5,7 @@ const InterestSection = () => {
     <section className="pb-12 pt-10">
       <div className="flex flex-col items-center justify-center gap-10">
         {/* ALIAS DIVS */}
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
           {alias.map(({ icon, text }) => (
             <div
               key={text}
