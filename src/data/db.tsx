@@ -1,4 +1,4 @@
-import figma from "../assets/images/figma.png";
+import figma from "../assets/logos/figma.svg";
 import framer from "../assets/images/framer.png";
 import webflow from "../assets/logos/webflow.svg";
 
