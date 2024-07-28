@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: #270753;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-grid {
+  --padding-inline: 1.5rem;
+  --content-max-width: 1220px;
+  --layout-max-width: 1440px;
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start]
+    minmax(var(--padding-inline), 1fr)
+
+    [content-start]
+    min(100% - (var(--padding-inline) * 2), var(--content-max-width))
+    [content-end]
+
+    minmax(var(--padding-inline), 1fr)
+    [full-width-end];
+}
+.content-grid > :not(.full-width) {
+  grid-column: content;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
+}
