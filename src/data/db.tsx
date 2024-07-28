@@ -1,6 +1,6 @@
-import figma from "@/assets/images/figma.png";
-import framer from "@/assets/images/framer.png";
-import webflow from "@/assets/logos/webflow.svg"
+import figma from "../assets/images/figma.png";
+import framer from "../assets/images/framer.png";
+import webflow from "../assets/logos/webflow.svg";
 
 export const interests = [
   "headers",
@@ -22,7 +22,11 @@ export const interests = [
   "illustrations",
 ];
 
-export const alias = [
+interface Alias {
+  icon: string;
+  text: string;
+}
+export const alias: Alias[] = [
   {
     icon: figma,
     text: "figma",
