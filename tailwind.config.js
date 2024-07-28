@@ -19,6 +19,7 @@ export default {
           200: "rgba(23, 3, 66, 0.75)",
         },
       },
+      // boxShadowColor
     },
   },
   plugins: [],
