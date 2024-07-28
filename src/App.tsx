@@ -1,10 +1,11 @@
-function App() {
+import { Navbar } from "./components";
 
+function App() {
   return (
     <div className="content-grid">
-      <h1>Hello</h1>
+      <Navbar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
