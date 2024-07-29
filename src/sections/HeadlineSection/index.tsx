@@ -11,10 +11,10 @@ const HeadlineSection = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-6">
-          <h1 className="max-w-xl lg:max-w-[43rem] bg-gradient-to-b from-primary-500 from-[10.16%] to-[#3C0A67] to-[91.41%] bg-clip-text text-5xl font-semibold leading-[3rem] lg:leading-[4rem] tracking-[-0.25rem] text-transparent max-sm:text-[2.75rem] max-sm:tracking-tight md:text-[4rem]">
+          <h1 className="max-w-xl leading-[3rem] md:max-w-2xl bg-gradient-to-b from-primary-500 from-[10.16%] to-[#3C0A67] to-[91.41%] bg-clip-text text-[2.75rem] font-semibold text-transparent max-md:tracking-tighter md:text-[3.45rem] lg:max-w-[43rem] lg:text-[4rem] lg:leading-[4rem] lg:tracking-[-0.25rem]">
             The ultimate library of templates & components for the creators
           </h1>
-          <p className="max-w-[61rem] text-sm  md:text-base font-medium leading-6 text-fade-200 sm:text-lg">
+          <p className="max-w-2xl text-sm font-medium leading-6 text-fade-200 sm:text-lg md:text-base lg:max-w-[61rem]">
             Premium templates at your fingertips. DevKit is the world’s largest
             library of Webflow, Figma & Framer components and tools. Enjoy
             hassle-free, highly efficient and faster development with DevKit
