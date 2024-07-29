@@ -2,7 +2,7 @@ import search from "../../assets/icons/search.svg";
 
 const HeadlineSection = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 mt-16">
       <div className="flex flex-col items-center justify-center gap-10 text-center">
         <div className="flex w-fit items-center justify-center rounded-full border-2 border-tint-200 bg-tint-300 px-4 py-1.5 sm:py-2">
           <span className="font-medium max-md:text-sm">
