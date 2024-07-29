@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         <Button
-          className="px-0 md:hidden"
+          className="-mr-6 md:hidden"
           onClick={() => setOpenNav((prev) => !prev)}
         >
           <img src={menu} />
