@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="flex items-center justify-center gap-4 text-primary-500 *:px-4 *:font-medium max-lg:hidden">
+        <ul className="flex items-center justify-center  *:cursor-pointer gap-4 text-primary-500 *:px-4 *:font-medium max-lg:hidden">
           {navlinks.map((navlink) => (
             <li key={navlink}>{navlink}</li>
           ))}
@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* MOBILE VIEW NAVIGATION */}
       <div
-        className={`${!openNav && "!hidden"} full-width content-grid absolute inset-x-0 top-[100%] min-h-[calc(100dvh-5rem)] w-full md:!hidden`}
+        className={`${!openNav && "!hidden"} full-width content-grid absolute inset-x-0 top-[100%] min-h-[calc(100dvh-5rem)] w-full lg:!hidden`}
       >
         <div
           onClick={() => setOpenNav((prev) => !prev)}
@@ -56,7 +56,7 @@ const Navbar = () => {
         ></div>
 
         <nav className="z-10 mt-10 h-fit rounded-md bg-[rgba(235,_239,_255)] px-4 py-8">
-          <ul className="flex flex-col items-center justify-center gap-4 text-primary-500 *:px-4 *:font-medium">
+          <ul className="flex flex-col items-center justify-center gap-4 *:cursor-pointer text-primary-500 *:px-4 *:font-medium">
             {navlinks.map((item, i) => (
               <li key={i} onClick={() => setOpenNav((prev) => !prev)}>
                 {item}
