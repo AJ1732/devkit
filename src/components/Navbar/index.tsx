@@ -19,9 +19,11 @@ const Navbar = () => {
             <h1 className="text-lg lg:text-2xl">DevKit</h1>
           </div>
 
-          <button className="flex items-center justify-center gap-1 rounded-lg bg-gradient-to-b from-primary-500 to-[#2b0D67] px-3 py-2.5 md:px-4 md:py-3">
+          <button className="flex items-center justify-center gap-1 rounded-lg bg-gradient-to-b from-primary-500 to-[#2b0D67] px-3 py-2.5 lg:px-4 lg:py-3">
             <img src={sparkle} alt="sparkle" />
-            <span className="text-white max-md:text-sm">Get premium</span>
+            <span className="text-white max-md:text-sm max-sm:hidden">
+              Get premium
+            </span>
           </button>
         </div>
 
@@ -33,11 +35,11 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-3 max-lg:hidden">
           <Button>Login</Button>
-          <Button className="shadow-md shadow-tint-200">Sign Up</Button>
+          <Button className="shadow-md bg-primary-500 text-white shadow-tint-200">Sign Up</Button>
         </div>
 
         <Button
-          className="-mr-6 md:hidden"
+          className="-mr-6 lg:hidden"
           onClick={() => setOpenNav((prev) => !prev)}
         >
           <img src={menu} />
@@ -61,6 +63,11 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <div className="flex flex-col mt-8 *:w-full items-center justify-center gap-2">
+            <Button className="border border-primary-500">Login</Button>
+            <Button className="shadow-md bg-primary-500 text-white shadow-tint-200">Sign Up</Button>
+          </div>
         </nav>
       </div>
     </header>
